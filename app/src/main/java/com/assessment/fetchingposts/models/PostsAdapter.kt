@@ -8,10 +8,7 @@ import com.assessment.fetchingposts.databinding.PostsListItemBinding
 
 class  PostsAdapter (var postsList:List<Posts>):RecyclerView.Adapter<PostsViewHolder>(){
 
-    fun updateProducts(newProducts: List<Posts>) {
-        postsList= newProducts
-        notifyDataSetChanged()
-    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostsViewHolder {
         val binding =
             PostsListItemBinding .inflate(LayoutInflater.from(parent.context),parent ,false)

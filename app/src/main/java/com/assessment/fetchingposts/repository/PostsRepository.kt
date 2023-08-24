@@ -12,7 +12,7 @@ import retrofit2.Response
 class PostsRepository {
     val apiClient = ApiClient.buildClient(ApiInterface::class.java)
 
-    suspend fun  getPosts():Response <Posts>{
+    suspend fun  getPosts():Response<List<Posts>>{
         return withContext(Dispatchers.IO){
             apiClient.getPosts()
         }
