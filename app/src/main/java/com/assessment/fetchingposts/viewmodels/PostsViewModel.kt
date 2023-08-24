@@ -13,11 +13,11 @@ class PostsViewModel:ViewModel() {
     val errorLiveData = MutableLiveData<String>()
 
 
-    fun fetchProducts(){
+    fun fetchPosts(){
         viewModelScope.launch {
             val response = postsRepo.getPosts()
             if (response.isSuccessful){
-//                productsLiveData.postValue(response.body()?.products)
+//                postsLiveData.postValue(response.body()?.g)
             }
             else{
                 errorLiveData.postValue(response.errorBody()?.string())

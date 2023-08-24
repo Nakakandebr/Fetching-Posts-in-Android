@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.assessment.fetchingposts.databinding.PostsListItemBinding
 
 
-class  ShopAdapter (var postsList:List<Posts>):RecyclerView.Adapter<PostsViewHolder>(){
+class  PostsAdapter (var postsList:List<Posts>):RecyclerView.Adapter<PostsViewHolder>(){
 
     fun updateProducts(newProducts: List<Posts>) {
         postsList= newProducts
